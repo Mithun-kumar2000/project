@@ -1,0 +1,9 @@
+<h1>LOGIN PAGE</h1>
+<div class="container">
+    <div class="inner">
+     <input type="text" placeholder="User Name" [(ngModel)]="user"><br><br>
+     <input type="password" placeholder="Password"  [(ngModel)]="pswd"><br><br>
+     <button type="submit" (click)="logauthenticate(user,pswd)">login</button>
+     <button type="submit" (click)="logout()">logout</button>
+</div>
+    </div>  

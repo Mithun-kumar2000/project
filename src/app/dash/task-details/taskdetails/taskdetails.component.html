@@ -1,0 +1,31 @@
+<h1>Task List Page</h1>
+<div class="task-list">
+<div *ngFor="let t of tsk" class="task-item">
+  <ul>
+    <li type="square" class="title"><b>TITLE: </b>{{t.Title}}</li>
+    <li type="circle" class="description"><b>DESCRIPTION: </b>{{t.Desc}}</li>
+    <li type="circle"><b>DUE DATE: </b>{{t.Due}}</li>
+    <li type="circle"><b>PRIORITY: </b>{{t.Priority}}</li> 
+    <li type="circle"><b>STATUS: </b>{{t.Status}}</li>   
+    <hr>
+  </ul>  
+</div>
+<p *ngIf="disp">
+  <input type="text" placeholder="Enter Task to be removed" name="Title" [(ngModel)]="tsk.Title">&nbsp;&nbsp;
+  <button (click)=rmvtsk(tsk.Title)>Confirm</button>&nbsp;
+  <button (click)="hides()">Cancel</button>
+  </p>
+  <p *ngIf="show">
+    <input type="text" placeholder="Enter Title" name="Titles" [(ngModel)]="tsk.Titles">&nbsp;
+    <input type="text" placeholder="Enter Title to Update" name="Title" [(ngModel)]="tsk.Title">&nbsp;
+    <input type="text" placeholder="Enter Description to Update" [(ngModel)]="tsk.Desc">&nbsp;&nbsp;
+    <input type="date" placeholder="Enter Due date to Update" [(ngModel)]="tsk.Due">&nbsp;&nbsp;
+    <input type="text" placeholder="Enter Priority to Update" [(ngModel)]="tsk.Priority">&nbsp;&nbsp;
+    <input type="status" placeholder="Enter Status to Update" [(ngModel)]="tsk.Status">&nbsp;&nbsp;
+    <button (click)="updttsk(tsk.Titles,tsk.Title,tsk.Desc,tsk.Due,tsk.Priority,tsk.Status)">Confirm</button>&nbsp;
+    <button (click)="uphds()">Cancel</button> 
+</p>
+<button (click)="gotocreate()">Create Task</button>
+<button (click)="deletetask()">Delete Task</button>
+<button (click)="updatetask()">Update Task</button>
+</div>

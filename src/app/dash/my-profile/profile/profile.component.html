@@ -1,0 +1,19 @@
+<body>
+    <div class="container">
+      <h1>User Profile</h1>
+      <div *ngFor="let d of dtl" class="user-profile">
+        <img src="../../../../assets/pp.png" alt="Profile Picture" class="profile-picture">
+        <p><span class="label">Name:</span> {{d.Name}}</p>
+        <p><span class="label">Email:</span> {{d.Email}}</p>
+        <p><span class="label">Phone:</span> {{d.Phone}}</p>
+        <p><span class="label">Designation:</span> {{d.Designation}}</p>
+        <p><span class="label">District:</span> {{d.District}}</p>
+        <p><span class="label">State:</span> {{d.State}}</p>
+        <p><span class="label">Country:</span> {{d.Country}}</p>
+      </div>
+      <button (click)="update()">Update Details</button> <br><br>
+      <button (click)="password()">Change Password</button>
+    </div>
+  </body>
+  
+

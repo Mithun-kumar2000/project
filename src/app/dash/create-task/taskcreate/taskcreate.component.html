@@ -1,0 +1,13 @@
+<h1>Task Create Page</h1>
+<div class="container">
+    <div class="inner">
+<form [formGroup]="myform">
+<input type="text" placeholder="Enter Title" formControlName="title" [(ngModel)]="dummy.Title">&nbsp;
+    <input type="text" placeholder="Enter Description" formControlName="desc" [(ngModel)]="dummy.Desc">&nbsp;&nbsp;
+    <input type="date" placeholder="Enter Due date" formControlName="due" [(ngModel)]="dummy.Due">&nbsp;&nbsp;
+    <input type="text" placeholder="Enter Priority" formControlName="prio" [(ngModel)]="dummy.Priority">&nbsp;&nbsp;
+    <input type="text" placeholder="Enter Status" formControlName="status" [(ngModel)]="dummy.Status">&nbsp;&nbsp;
+    <button (click)="addtsk()">Confirm</button>&nbsp;
+</form>
+</div>
+</div>

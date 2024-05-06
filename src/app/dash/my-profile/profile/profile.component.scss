@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center align content */
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .user-profile {
+    margin-top: 20px;
+    text-align: left; /* Left align content */
+  }
+  
+  .user-profile p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .user-profile .label {
+    font-weight: bold;
+    color: #010f1e; /* Blue color for labels */
+  }
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the profile picture round */
+    margin-bottom: 20px; /* Add some space below the profile picture */
+  }
+  button{
+    background-color: rgb(49, 49, 134);
+    color: #f0f0f0;
+  }
+  
+  

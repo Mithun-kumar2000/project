@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .inner {
+    width: 400px;
+    padding: 20px;
+    background-color: #608ebc; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="date"] {
+    width: 70%;
+  }
+  
+  button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  button:active {
+    transform: translateY(1px); /* Add slight click effect */
+  }
+  
+h1{
+    text-align: center;
+    color: #007bff;
+}
